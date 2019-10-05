@@ -1,0 +1,295 @@
+@charset utf-8;
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+main {
+margin-top: 5%;
+}
+
+
+footer {
+display: block;
+display: flex;
+justify-content: flex-end;
+font-weight: 700;
+background: #777;
+padding: 0 5px 0 0;
+}
+
+/*Start vertical navigation bar*/
+
+
+
+#vertical_nav {
+margin: 0;
+padding: 0;
+
+}
+
+
+#vertical_nav ul {
+   list-style: none;
+   width: 20%;
+}
+
+
+#vertical_nav ul li {
+	position: relative;
+
+
+ }
+
+
+#vertical_nav ul li a {
+ width: 100%;
+ color: #228;
+ background-image: linear-gradient(to right, #ff00ff, #ff33ff, #ff66ff, #ff99ff, #ffccff);
+ display: block;
+ height: 64px;
+ font-family: 'EB Garamond', serif;
+ font-weight: bold;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+}
+
+
+#vertical_nav ul li a:hover {
+background-image: linear-gradient(to right, #ff66ff, #ff99ff, #ffccff);
+}
+
+
+
+/*Start Drop Menu*/
+
+
+
+#drop_nav {
+margin: 0;
+padding: 0;
+}
+
+
+
+#drop_nav ul {
+margin: 0px;
+padding: 0;
+width: 100%;
+list-style: none;
+display: flex;
+}
+
+#drop_nav li{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+
+#drop_nav a {
+color: #222;
+background: #ff00ff;
+display: block;
+height: 64px;
+font-family: 'EB Garamond', serif;
+font-weight: 500;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+transition: background 0.4s;
+}
+
+
+
+#drop_nav a:hover {
+background: #ffccff;
+}
+
+
+#drop_nav li:hover .submenu > li {
+display: block;
+top: 0;
+}
+
+
+.submenu li {
+display: none;
+position: absolute;
+top: 0px;
+}
+
+
+.submenu {
+display: flex;
+flex-direction: column;
+position: absolute;
+width: 100%;
+}
+
+
+
+.submenu li {
+position: relative;
+}
+
+
+.submenu li:hover {
+display: block;
+}
+
+.arrow{
+  margin-left: 8px;
+  color: #245;
+  font-size: 12px;
+}
+
+
+
+
+
+/*Start Navigation Tabs*/
+
+#tabs_nav{
+  margin: 0px;
+  padding: 0;
+}
+
+#tabs_nav ul{
+  width: 90%;
+  list-style: none;
+  display: flex;
+}
+
+#tabs_nav li{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#tabs_nav a{
+  color: #fff;
+  height: 64px;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
+  margin-right: -10px;
+  margin-left: 5px;
+  z-index: 5;
+  text-decoration: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+  blur-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: block;
+  background-image: linear-gradient(to bottom, #E7B1F5, #9C55AF, #382479, #181862);
+  position: relative;
+  transition: background 0.4s;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+
+}
+
+#tabs_nav a:hover{
+  margin-top: -10px;
+  padding-bottom: 10px;
+  margin-right: -5px;
+  position: relative;
+  z-index: 5;
+}
+
+
+
+
+
+/*Start responsive menu here*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #9C55AF 0%, #382479 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+
+}
+
+.main-nav{
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.home{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li{
+  text-align: center;
+  margin: 15px auto;
+}
+
+.home{
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+.active{
+  display: block;
+}
+
+@media screen and (min-width: 768px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+
+  }
+
+  .main-nav{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+margin: 0;
+}
+.nav-links {
+margin-left: 40px;
+}
+
+.home {
+margin-top: 0;
+}
+
+.navbar-toggle {
+display: none;
+}
+
+.home:hover,
+.nav-links:hover {
+color: rgba(255, 255, 255, 1);
+}
+
+}

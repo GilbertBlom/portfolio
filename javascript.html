@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+    <html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta charset="utf-8">
+      <title>Gilbert Blom - ePortfolio</title>
+   
+     <!--[if gte mso 9]><xml>
+     <mso:CustomDocumentProperties>
+    <mso:Category0 msdt:dt="string">***Choose***</mso:Category0>
+    </mso:CustomDocumentProperties>
+    </xml><![endif]-->
+   </head>
+
+   <body>
+
+     <header>
+       <h1>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h1>
+
+    </header>
+
+    <nav>
+     <p>
+       <a href="javascript.html"></a> &#124; 
+       <a href="contact.html"></a>
+     </p>
+    </nav>
+
+    <main>
+<h2>Aenean commodo ligula eget dolor aenean massa</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</p>
+
+
+<h3>Cum sociis natoque penatibus et magnis dis 
+parturient montes nascetur ridiculus mus</h3>
+
+<ul>
+  
+  <li id="highlight">Lorem ipsum dolor sit amet consectetuer.</li>
+  <li>Aenean commodo ligula eget dolor.</li>
+  <li>Aenean massa cum sociis natoque penatibus.</li>
+</ul>
+
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Aenean commodo ligula eget dolor. Aenean massa 
+<strong>strong</strong>. Cum sociis natoque penatibus 
+et magnis dis parturient montes, nascetur ridiculus 
+mus. Donec quam felis, ultricies nec, pellentesque 
+eu, pretium quis, sem. Nulla consequat massa quis 
+enim. Donec pede justo, fringilla vel, aliquet nec, 
+vulputate eget, arcu. In enim justo, rhoncus ut, 
+imperdiet a, venenatis vitae, justo. Nullam dictum 
+felis eu pede <a class="external ext" href="#">link</a> 
+mollis pretium. Integer tincidunt. Cras dapibus. 
+Vivamus elementum semper nisi. Aenean vulputate 
+eleifend tellus. Aenean leo ligula, porttitor eu, 
+consequat vitae, eleifend ac, enim. Aliquam lorem ante, 
+dapibus in, viverra quis, feugiat a, tellus. Phasellus 
+viverra nulla ut metus varius laoreet. Quisque rutrum. 
+Aenean imperdiet. Etiam ultricies nisi vel augue. 
+Curabitur ullamcorper ultricies nisi.</p>
+<br>
+<button type="button" onclick="alert('Beware of Dogs!')">Alert Message</button>
+
+<h4>Add Content to a table dynamically</h4>
+<form action="#" method="get" name="mainForm" id="mainForm">
+                <fieldset>
+                   <legend>Input Activity Logs</legend>
+                   <table id="tracklist">
+                    <tr>
+                      <th colspan="3">Track List: </th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td><label>Activity Log:</label><br><input type="text" name="actlog1" class="required"></td>
+                      <td><label>Time:</label><br><input type="time"></td>
+                    </tr>
+                   </table>
+                   <input type="submit">
+                </fieldset>
+              </form>
+	      <br>
+              <button id="add_activity">Add Activity</button>
+    </main>
+
+    <footer>
+     <p>&#169; 2019 Gilbert Blom</p>
+    </footer>
+        <script>
+	    /*
+	    dir(document);
+	    log(document.html);
+	    */
+	
+	    var el1 =document.querySelector('h1');
+	    
+		console.log(el1.innerHTML);
+	    
+		el1.innerHTML = ("My JavaScript");
+	    
+		el1.style.color = '#800000';
+	    
+		el1.style.background = '#999999';
+	    
+		var el2 = document.querySelector('#highlight');
+	    
+		el2.innerHTML ="My highlighted <br> list item";
+	    
+		el2.style.background = '#ffff00';
+	     
+		 var activityNumber = 2;
+	    
+		var addButton = document.getElementById('add_activity');
+	    
+		var tracklistTable = document.getElementById('tracklist');
+	    
+		addButton.onclick = function() {
+		
+		
+	      // Add a new row to the table using the correct activityNumber
+      tracklistTable.innerHTML += '<tr><td>' + activityNumber + '</td><td><label>Activity Log: </label><br><input type="text" name="actlog1' + activityNumber + '" class="required"></td><td><label>Time:</label><br><input type="time" name="time' + activityNumber + '" class="required"></td></tr>';
+			
+			
+			activityNumber += 1;
+	
+	     
+	        }
+	
+	     </script>
+    </body>
+</html>

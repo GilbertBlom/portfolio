@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+#container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+* {
+ box-sizing: border-box;
+
+}
+
+body{
+	display: flex;
+	flex-wrap: wrap; 
+	background: url("../images/mountain.jpg")  no-repeat;
+	background-size: cover;
+	color: #fff;
+	height: auto;
+	text-align: center;
+	margin-top: 10px;
+	text-shadow: 0px 1px #28394f;
+
+}
+
+
+
+
+header{
+	background: linear-gradient(40deg, #5d805c, #87a586, #9fba9e, #bad2b9);
+    height: 20vh;
+    padding: 1em;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px .5px 1px #f2f2f2;
+}
+
+html{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+main{
+	text-align: center;
+	padding: 20px;
+	margin-top: 10px;
+	
+}
+
+div.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #000;
+}
+
+div.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+div.nav li{
+  padding: 8px;
+  margin-bottom: 7px;
+  background: linear-gradient(40deg, #5d805c, #87a586, #9fba9e, #bad2b9);
+  color: #000;
+  box-shadow: 0px .5px 1px #f2f2f2;
+}
+
+div.nav li:hover{
+	 border: 1px solid #fff;
+	 color: #000;
+}
+
+img{
+	padding: 20px;
+	width: 250px;
+	
+}
+
+section{
+	display: block;
+	padding: 10px;
+	width: 50%;
+	align-content: center;
+	margin-left: 25%;
+	margin-top: 15px;
+	text-shadow: 0px 1px #f2f2f2;
+
+
+}
+
+footer {
+  background: linear-gradient(40deg, #5d805c, #87a586, #9fba9e, #bad2b9);
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px .5px 1px #f2f2f2;
+ 
+
+}
+footer img{
+	width: 100px;
+	height: 70px;
+}
+
+div.gallery {
+	border: 1px solid #f2f2f2;
+	box-shadow: 0px .5px 1px #f2f2f2;
+    background: linear-gradient(40deg, #5d805c, #87a586, #9fba9e, #bad2b9);
+    color: #000;
+}
+
+div.gallery:hover {
+	border: 1px solid #82bdbf;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+
+div.link {
+	padding: 15px;
+	text-align: center;
+} 
+
+div.portfolio{
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+div.resume {
+	border: 1px solid #f2f2f2;
+	width: 80px;
+	height: 40px;
+	align-content: center;
+	margin-left: 48%;
+	background: linear-gradient(40deg, #5d805c, #87a586, #9fba9e, #bad2b9);
+	box-shadow: 0px .5px 1px #f2f2f2;
+	color: #00ffff;
+}
+
+div.resume:hover {
+	border: 1px solid #00ffff;
+}
+
+.material-icons {
+	padding: 5px;
+	color: #00ffff;
+
+}
+.material-icons:hover{
+	background-color: #b2b2b2;
+}
+
+div.about{
+	align-content: center;
+	font-size: 18px;
+	
+
+}
+.text{
+	font-size: 18px;
+	text-shadow: 0px 1px #f2f2f2;
+	align-content: top;
+}
+.about{
+	
+}
+
+
+
+@media only screen and (max-width: 800px){
+	div.portfolio {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+	div.about{
+		width: 100%;
+	}
+
+}
+
+
+@media only screen and (min-width: 500px) {
+	div.portfolio{
+		width: auto;
+	}
+	div.resume{
+		align-content: center;
+
+	}
+	div.about{
+		width: 100%;
+	}
+
+	
+	
+ 
+}
+
+.fix:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+div#main{
+	width: 830px;
+	height: 650px;
+	margin: 0 auto;
+	font-family: 'Grenze', serif;
+	color:  #5d805c;
+}
+div#form_sample{
+	text-align: center;
+	border: 1px solid  #5d805c;
+	width: 300px;
+	padding: 0 50px 15px;
+	margin-top: 20px;
+	box-shadow: 0 0 15px;
+	border-radius: 6px;
+	float: left;
+}
+
+#main h2{
+	margin-top: 40px;
+  }
+
+  hr{
+  	margin-top: -5px;
+  }
+
+  label{
+  	float: left;
+  	font-size: 16px;
+  	font-family: 'Grenze', serif;
+  	color: #5d805c;
+  }
+
+
+input[type="text"]{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	height: 35px;
+	padding: 10px;
+	border: 3px solid #5d805c;
+}
+
+textarea{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	height: 100px;
+	padding: 10px;
+	border: 3px dotted #5d805c;
+	resize: none;
+}
+
+input[type="submit"]{
+	width: 100%;
+	padding: 10px 45px;
+	background-color: #5d805c;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: 'Grenze', serif;
+}
+

@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+footer{
+	clear: both;
+}
+div#main{
+	width: 830px;
+	height: 650px;
+	margin: 0 auto;
+	font-family: 'Grenze', serif;
+	color:  #cc33ff;
+}
+div#form_sample{
+	text-align: center;
+	border: 1px solid  #cc33ff;
+	width: 300px;
+	padding: 0 50px 15px;
+	margin-top: 20px;
+	box-shadow: 0 0 15px;
+	border-radius: 6px;
+	float: left;
+}
+
+#main h2{
+	margin-top: 40px;
+  }
+
+  hr{
+  	margin-top: -5px;
+  }
+
+  label{
+  	float: left;
+  	font-size: 16px;
+  	font-family: 'Grenze', serif;
+  	color: #cc33ff;
+  }
+
+
+input[type="text"]{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	height: 35px;
+	padding: 10px;
+	border: 3px solid #e699ff;
+}
+
+textarea{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	height: 100px;
+	padding: 10px;
+	border: 3px dotted #e699ff;
+	resize: none;
+}
+
+input[type="submit"]{
+	width: 100%;
+	padding: 10px 45px;
+	background-color: #e699ff;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	font-family: 'Grenze', serif;
+}
